@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Stopwatch with Analog and Digital Clock</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stopwatch</h2>
+        <div class="clock-choice">
+            <button id="digitalClockButton" class="active">Digital Clock</button>
+            <button id="analogClockButton">Analog Clock</button>
+        </div>
+        <div class="clock digital">
+            <div class="time-display">
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span> :
+                <span id="milliseconds">00</span>
+            </div>
+        </div>
+        <div class="clock analog" style="display: none;">
+            <div class="clock-analog">
+                <div class="hand hour-hand" id="hour"></div>
+                <div class="hand minute-hand" id="minute"></div>
+                <div class="hand second-hand" id="second"></div>
+                <div class="center"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+        <div id="laps"></div>
+    </div>
+    <script src="task2.js"></script>
+</body>
+</html>
