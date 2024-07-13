@@ -153,6 +153,11 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
+#start:active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 #stop {
     background: linear-gradient(to right, #f12711, #f5af19);
     color: white;
@@ -160,6 +165,11 @@ h2 {
 
 #stop:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+#stop:active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #reset {
@@ -171,6 +181,11 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
+#reset:active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 #lap {
     background: linear-gradient(to right, #ff9800, #fb8c00);
     color: white;
@@ -178,6 +193,11 @@ h2 {
 
 #lap:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+#lap:active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #laps {
@@ -196,20 +216,61 @@ h2 {
     border-radius: 5px;
     margin: 5px 0;
 }
-.buttons button:active {
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
 
-.clock-choice button:active {
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+/* Media Queries for Tablet and Mobile Devices */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .time-display {
+        font-size: 2.5em;
+    }
+
+    .clock-analog {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hand {
+        width: 5px;
+    }
+
+    .hour-hand {
+        height: 45px;
+    }
+
+    .minute-hand {
+        height: 65px;
+    }
+
+    .second-hand {
+        height: 85px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+
+    #laps {
+        font-size: 1.1em;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         width: 90%;
-        padding: 20px;
+        padding: 15px;
     }
 
     h2 {
@@ -252,5 +313,54 @@ h2 {
 
     #laps {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .time-display {
+        font-size: 1.8em;
+    }
+
+    .clock-analog {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hand {
+        width: 3px;
+    }
+
+    .hour-hand {
+        height: 35px;
+    }
+
+    .minute-hand {
+        height: 50px;
+    }
+
+    .second-hand {
+        height: 70px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        margin: 5px 0;
+        padding: 8px 15px;
+    }
+
+    #laps {
+        font-size: 0.9em;
     }
 }
