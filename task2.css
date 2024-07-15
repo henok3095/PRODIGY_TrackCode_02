@@ -205,3 +205,75 @@ h2 {
     transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .time-display {
+        font-size: 1.8em;
+    }
+
+    .clock-analog {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hand {
+        width: 2px;
+    }
+
+    .hour-hand {
+        height: 35px;
+    }
+
+    .minute-hand {
+        height: 50px;
+    }
+
+    .second-hand {
+        height: 65px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttons button {
+        margin: 8px 0;
+        padding: 12px 24px;
+        font-size: 0.9em;
+        border-radius: 25px;
+    }
+
+    #laps {
+        font-size: 0.9em;
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .lap {
+        padding: 6px 0;
+    }
+
+    .clock-choice {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clock-choice button {
+        margin: 10px 0;
+    }
+}
